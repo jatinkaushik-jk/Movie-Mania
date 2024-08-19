@@ -12,6 +12,7 @@ const Searchbar = ({ setSearched, wantLogo = true }) => {
 
     async function getMovie(url) {
         const response = await fetch(url);
+        if (!response.ok) throw new Error("Error in Fetching requested URL");
         const data = await response.json();
         setSearched && setSearched(data.results);
     };

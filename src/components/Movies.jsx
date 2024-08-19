@@ -9,6 +9,7 @@ const Movies = ({ moviesData }) => {
                 {moviesData ? moviesData.map((movie, index) => {
                     return <MovieCard key={index} movieData={moviesData[index]}></MovieCard>
                 }) : <Loader></Loader>}
+                {moviesData && moviesData.length === 0 && <div>No such Movie found!</div>}
             </div>
         </main>
     )
