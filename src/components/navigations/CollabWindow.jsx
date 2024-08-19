@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const CollabWindow = ({ setState }) => {
 
-    const textToCopy = 'https://movie-mania.com';
+    const textToCopy = 'https://movie-mania-zeta.vercel.app';
     const [copySuccess, setCopySuccess] = useState(false);
 
     const handleClose = () => {

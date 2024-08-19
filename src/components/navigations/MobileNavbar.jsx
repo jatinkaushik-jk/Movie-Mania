@@ -27,7 +27,7 @@ const MobileNavbar = ({ className, passSearched }) => {
 
     return (
         <>
-            <nav className={`w-full h-max flex flex-row items-center justify-between gap-8 p-2 pt-4 px-6 sm:px-10 tracking-wide relative z-10 bg-white ${className}`}>
+            <nav className={`w-full h-max flex flex-row items-center justify-between gap-3 sm:gap-8 p-2 pt-4 px-4 sm:px-10 tracking-wide relative z-10 bg-white ${className}`}>
                 <a id="logo" href="/"><img className="w-10 object-contain" src="/logo.svg" alt="logo" /></a>
                 <div className="w-full">
                     <Searchbar wantLogo={false} setSearched={passSearched}></Searchbar>

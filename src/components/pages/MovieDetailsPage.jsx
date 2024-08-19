@@ -116,7 +116,7 @@ const MovieDetailsPage = () => {
                     </div>
                 </div>
 
-                <div className="w-full grid grid-rows-1 grid-cols-12 gap-y-6 gap-x-4 md:gap-y-10 ">
+                <div className="w-full grid grid-rows-1 grid-cols-12 gap-y-6 gap-x-2 md:gap-y-10 ">
                     {/* Movie Poster */}
                     <div className="row-span-1 row-start-2 col-span-3 col-start-1 md:row-start-1">
                         <img className="w-full rounded" src={IMG_PATH + movieData.details.poster_path} alt="Movie Poster" />
@@ -131,7 +131,7 @@ const MovieDetailsPage = () => {
                         {loading && <div className="w-full h-full flex justify-center items-center"><Loader /></div>}
                     </div>
 
-                    <div className="row-span-1 col-span-9 col-end-13 md:col-span-12 ps-1">
+                    <div className="row-span-1 col-span-9 col-end-13 md:col-span-12 sm:ps-1">
                         {/* Movie Tags */}
                         <div className="movieTags mb-4 flex flex-wrap gap-2 md:gap-4">
                             {movieData.details.genres.map((tag, index) => {

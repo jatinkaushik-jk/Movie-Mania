@@ -41,10 +41,10 @@ const Searchbar = ({ setSearched, wantLogo = true }) => {
     }, [searchValue]);
 
     return (
-        <div className="flex flex-row gap-x-6 items-center w-full relative">
+        <div className="flex flex-row sm:gap-x-6 items-center w-full relative">
             <div className={wantLogo ? "" : `hidden`}><img src="/logo.svg" className="w-8 object-contain" alt="logo" /></div>
-            <input value={searchValue} ref={searchInput} type="search" name="search" id="search" placeholder="Search movies" autoFocus className="bg-[#eee] rounded-md p-2 pl-4 outline-none w-full h-12" onInput={handleSearchInput} />
-            <div className="absolute right-3 cursor-pointer"><HiOutlineSearch className="text-2xl font-semibold" /></div>
+            <input value={searchValue} ref={searchInput} type="search" name="search" id="search" placeholder="Search movies" autoFocus className="bg-[#eee] rounded-md p-2 sm:pl-4 outline-none w-full h-12" onInput={handleSearchInput} />
+            <div className="absolute right-2 sm:right-3 cursor-pointer"><HiOutlineSearch className="text-2xl font-semibold" /></div>
         </div>
     )
 }
