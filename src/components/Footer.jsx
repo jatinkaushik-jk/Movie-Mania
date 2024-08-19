@@ -24,7 +24,7 @@ const Footer = () => {
                     <a href="https://github.com/jatinkaushik-jk/Movie-Mania" rel="noopener noreferrer" className="hover:text-[rgba(255,255,255,0.75)] transition-colors text-nowrap flex flex-row flex-nowrap items-center gap-1" >DOCUMENTATION <MdArrowOutward /></a>
                     <a href="https://github.com/jatinkaushik-jk/Movie-Mania" rel="noopener noreferrer" className="hover:text-[rgba(255,255,255,0.75)] transition-colors text-nowrap flex flex-row flex-nowrap items-center gap-1" >GITHUB REPOSITORY <MdArrowOutward /></a>
                 </div>
-                <div className="w-32 sm:w-40 md:w-48 my-4 sm:my-6"><img className="w-full" src="/src/assets/mmLogoWhite.svg" alt="logo white" /></div>
+                <div className="w-32 sm:w-40 md:w-48 my-4 sm:my-6"><img className="w-full" src="/assets/mmLogoWhite.svg" alt="logo white" /></div>
             </div>
             <div id="fbottom-section" className="text-center">
                 <div>Movie Mania | By Jatin Kaushik</div>
