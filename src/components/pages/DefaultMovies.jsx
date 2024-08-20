@@ -52,7 +52,7 @@ const DefaultMovies = () => {
     return (
         <>
             <Header getSearched={(data) => setDefaultMovies(data)}></Header>
-            <Movies moviesData={defaultMovies} ></Movies>
+            <Movies moviesData={defaultMovies} isLoading={loading} ></Movies>
             {loading && <Loader></Loader>}
             <Footer></Footer>
         </>

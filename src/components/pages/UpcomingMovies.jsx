@@ -44,7 +44,7 @@ const UpcomingMovies = () => {
     return (
         <>
             <Header></Header>
-            <Movies moviesData={newMovies} ></Movies>
+            <Movies moviesData={newMovies} isLoading={loading} ></Movies>
             {loading && <Loader></Loader>}
             <Footer></Footer>
         </>

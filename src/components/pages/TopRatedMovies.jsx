@@ -47,7 +47,7 @@ const TopRatedMovies = () => {
     return (
         <>
             <Header></Header>
-            <Movies moviesData={topMovies} ></Movies>
+            <Movies moviesData={topMovies} isLoading={loading} ></Movies>
             {loading && <Loader></Loader>}
             <Footer></Footer>
         </>

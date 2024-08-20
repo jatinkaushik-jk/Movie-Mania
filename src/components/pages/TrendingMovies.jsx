@@ -45,7 +45,7 @@ const PopularMovies = () => {
     return (
         <>
             <Header></Header>
-            <Movies moviesData={trendMovies} ></Movies>
+            <Movies moviesData={trendMovies} isLoading={loading} ></Movies>
             {loading && <Loader></Loader>}
             <Footer></Footer>
         </>
